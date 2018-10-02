@@ -1,6 +1,6 @@
 # Trusty
 
-## The CLI Framework for Rust
+## Fully featured code generation and templating tool
 
 ### By Chris Cates
 
@@ -47,7 +47,7 @@ You can then invoke commands through the `trusty` command:
 trusty
 
 # or
-trusty
+trusty --help
 
 # Save a template file
 trusty save template file ./myfile.txt --name SpecialText
