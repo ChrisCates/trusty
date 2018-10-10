@@ -1,0 +1,35 @@
+{
+  "name": "trusty",
+  "version": "1.0.0",
+  "description": "Simple code gen and templating tool",
+  "main": "dist/trusty.js",
+  "repository": "https://github.com/ChrisCates/trusty.git",
+  "author": "Chris Cates <hello@chriscates.ca>",
+  "license": "MIT",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "cli": "^1.0.1",
+    "colors": "^1.3.2",
+    "coveralls": "^3.0.2",
+    "fs-extra": "^7.0.0",
+    "fs-jetpack": "^2.1.1",
+    "klaw-sync": "^6.0.0",
+    "leveldown": "^4.0.1",
+    "levelup": "^3.1.1",
+    "mocha": "^5.2.0",
+    "nyc": "^13.0.1",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  },
+  "scripts": {
+    "build": "tsc src/trusty.ts --outDir dist",
+    "start": "yarn build && node src/prepend.js && node dist/trusty.js",
+    "build:test": "tsc src/tests/trusty.ts --outDir dist",
+    "test": "yarn build:test && mocha dist/tests",
+    "nyc": "nyc npm test && nyc report --reporter=text-lcov | coveralls"
+  },
+  "bin": {
+    "trusty": "./dist/trusty.js"
+  },
+  "preferGlobal": true
+}
