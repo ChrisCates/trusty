@@ -1,6 +1,6 @@
 {
-  "name": "trusty",
-  "version": "1.0.0",
+  "name": "chriscates-trusty",
+  "version": "0.1.0",
   "description": "Simple code gen and templating tool",
   "main": "dist/trusty.js",
   "repository": "https://github.com/ChrisCates/trusty.git",

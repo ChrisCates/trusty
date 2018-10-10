@@ -10,7 +10,7 @@
 Trusty is accessible via npm or yarn:
 
 ```bash
-yarn global add trusty # or npm install trusty --global
+yarn global add chriscates-trusty # or npm install chriscates-trusty --global
 ```
 
 You can then invoke commands through the `trusty` command:
